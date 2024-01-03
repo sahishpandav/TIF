@@ -20,6 +20,8 @@ function Homepage(props) {
                         of knowledge to supercharge your financial growth, because at TIF,
                         we're here to help you multiply your bank account digits. Join us
                         today and embark on your journey to financial success!
+
+                        hello this is edit by chinmay.
                     </p>
                     <button className="btn btn-outline-success my-2 my-sm-0 Homepage-member-btn" id="login">
                         <span>Be a member</span>
