@@ -22,6 +22,8 @@ function Homepage(props) {
                         today and embark on your journey to financial success!
 
                         hello this is edit by chinmay.
+
+                        this is my
                     </p>
                     <button className="btn btn-outline-success my-2 my-sm-0 Homepage-member-btn" id="login">
                         <span>Be a member</span>
