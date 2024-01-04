@@ -1,12 +1,12 @@
 import React from 'react';
 import '../css/MyCarousel.css';
-import bull from "../assets/bull_tif.png";
 import CarouselImg1 from '../assets/carousel-items/canteen.jpg';
 import CarouselImg2 from '../assets/carousel-items/fund.jpg';
 import CarouselImg3 from '../assets/carousel-items/intro.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Card, Stack, Heading, Text, CardBody, Image} from '@chakra-ui/react'
 
 function MyCarousel(props) {
     const responsive = {
@@ -35,21 +35,91 @@ function MyCarousel(props) {
     return (
         <>
             <div className='my-10 MyCarousel-carousel'>
-            <Carousel responsive={responsive} showDots={true} partialVisible={true}>
+                <Carousel responsive={responsive}
+                 showDots={true} 
+                 partialVisible={true}
+                 autoPlay={true}
+                swipeable={true}
+                draggable={true}
+                infinite={true} >
                     <div>
-                        <img src={bull} alt="" className="MyCarousel-carousel-image" />
+                        <Card maxW='sm'> 
+                            <CardBody>
+                                <Image
+                                    src={CarouselImg3}
+                                    alt='Green double couch with wooden legs'
+                                    borderRadius='lg'
+                                />
+                                <Stack mt='6' spacing='3'>
+                                    <Heading size='md'>Living room Sofa</Heading>
+                                    <Text>
+                                        This sofa is perfect for modern tropical spaces, baroque inspired
+                                        spaces, earthy toned spaces and for people who love a chic design with a
+                                        sprinkle of vintage design.
+                                    </Text>
+                                </Stack>
+                            </CardBody>
+                        </Card>
                     </div>
                     <div>
-                        <img src={CarouselImg1} alt="" className="MyCarousel-carousel-image" /> 
+                    <Card maxW='sm'>
+                            <CardBody>
+                                <Image
+                                    src={CarouselImg1}
+                                    alt='Green double couch with wooden legs'
+                                    borderRadius='lg'
+                                />
+                                <Stack mt='6' spacing='3'>
+                                    <Heading size='md'>The Canteen Talks</Heading>
+                                    <Text>
+                                        This sofa is perfect for modern tropical spaces, baroque inspired
+                                        spaces, earthy toned spaces and for people who love a chic design with a
+                                        sprinkle of vintage design.
+                                    </Text>
+                                </Stack>
+                            </CardBody>
+                        </Card>
                     </div>
                     <div>
-                        <img src={CarouselImg2} alt="" className="MyCarousel-carousel-image" />
+                    <Card maxW='sm'>
+                            <CardBody>
+                                <Image
+                                    src={CarouselImg3}
+                                    alt='Green double couch with wooden legs'
+                                    borderRadius='lg'
+                                />
+                                <Stack mt='6' spacing='3'>
+                                    <Heading size='md'>Stock Analyse Workshop</Heading>
+                                    <Text>
+                                        This sofa is perfect for modern tropical spaces, baroque inspired
+                                        spaces, earthy toned spaces and for people who love a chic design with a
+                                        sprinkle of vintage design.
+                                    </Text>
+                                </Stack>
+                            </CardBody>
+                        </Card>
                     </div>
                     <div>
-                        <img src={CarouselImg3} alt="" className="MyCarousel-carousel-image" />
+                    <Card maxW='sm'>
+                            <CardBody>
+                                <Image
+                                    src={CarouselImg2}
+                                    alt='Green double couch with wooden legs'
+                                    borderRadius='lg'
+                                />
+                                <Stack mt='6' spacing='3'>
+                                    <Heading size='md'>Market Cap Discussion</Heading>
+                                    <Text>
+                                        This sofa is perfect for modern tropical spaces, baroque inspired
+                                        spaces, earthy toned spaces and for people who love a chic design with a
+                                        sprinkle of vintage design.
+                                    </Text>
+                                </Stack>
+                            </CardBody>
+                        </Card>
                     </div>
                 </Carousel>
-                </div>
+            </div>
         </>
     );
 }
