@@ -1,37 +1,12 @@
 import React from 'react';
 import '../css/Homepage.css';
 import bull from "../assets/bull_tif.png";
-import CarouselImg1 from '../assets/carousel-items/canteen.jpg';
-import CarouselImg2 from '../assets/carousel-items/fund.jpg';
-import CarouselImg3 from '../assets/carousel-items/intro.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import MyCarousel from './MyCarousel';
 
 function Homepage(props) {
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5,
-            partialVisibilityGutter: 30
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3,
-            partialVisibilityGutter: 30
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-            partialVisibilityGutter: 30
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            partialVisibilityGutter: 30
-        }
-    };
+    
     return (
         <div className='container text-center my-5 justify-content-center'>
             <div className='row'>
@@ -60,22 +35,7 @@ function Homepage(props) {
             </div>
 
             {/* carousel */}
-            <div className='my-10 Homepage-carousel'>
-                <Carousel responsive={responsive} showDots={true} partialVisible={true}>
-                    <div>
-                        <img src={bull} alt="" className="Homepage-carousel-image" />
-                    </div>
-                    <div>
-                        <img src={CarouselImg1} alt="" className="Homepage-carousel-image" /> 
-                    </div>
-                    <div>
-                        <img src={CarouselImg2} alt="" className="Homepage-carousel-image" />
-                    </div>
-                    <div>
-                        <img src={CarouselImg3} alt="" className="Homepage-carousel-image" />
-                    </div>
-                </Carousel>
-            </div>
+            <MyCarousel/>
 
         </div>
     );
