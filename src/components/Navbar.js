@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../assets/logo-light.jpg';
-import '../css/Navbar.css';
+import logo from '../assets/tif-dark-logo-2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/Navbar.css';
 
 function Navbar(props) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light Navbar" id="nav-menu">
+        <nav className="navbar navbar-expand-lg navbar-dark Navbar" id="nav-menu">
             <div className='container'>
                 <a className="navbar-brand" href="/">
                     <img src={logo} alt="" className="Navbar-logo" />
@@ -16,20 +16,20 @@ function Navbar(props) {
                 <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul className="navbar-nav Navbar-content">
                         <li className="nav-item">
-                            <a className="nav-link" href="/">Home</a>
+                            <a className="nav-link Navbar-nav-link" href="/">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
+                            <a className="nav-link Navbar-nav-link" href="/about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/news">News</a>
+                            <a className="nav-link Navbar-nav-link" href="/news">News</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/merchandise">Merchandise</a>
+                            <a className="nav-link Navbar-nav-link" href="/merchandise">Merchandise</a>
                         </li>
                     </ul>
                     <button className="btn btn-outline-success my-2 my-sm-0 Navbar-login-btn" id="login">
-                        <span>Login</span>
+                            Login
                     </button>
                 </div>
             </div>
