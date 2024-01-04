@@ -63,3 +63,10 @@
     background-clip: text;
     margin-top: 10px;
 }
+
+.Homepage-carousel{
+    margin-top: 10px;
+}
+.Homepage-carousel-image{
+    width: 300px;
+}
